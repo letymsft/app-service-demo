@@ -1,9 +1,7 @@
-name: Pago Profesores - WebApp - Build Validation
+name: App Service Demo - Pull Request - Development
 
 on:
   pull_request:
-    branches:
-      - dev
 
 permissions:
   id-token: write
