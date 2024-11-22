@@ -13,3 +13,10 @@ jobs:
     with:
       ENVIRONMENT: development
     secrets: inherit
+
+  deploy:
+    needs: build
+    uses: letymsft/github-reusable-workflows/.github/workflows/reusable-app-service-deploy.yml@main
+    with:
+      ENVIRONMENT: development
+    secrets: inherit
